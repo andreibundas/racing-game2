@@ -17,7 +17,7 @@ public class Vehicle extends Object  {
         if(speed > maxSpeed) {                 // conditional statement
             System.out.println("Max speed exceeded.");
             return 0;
-        } else if (speed -- maxSpeed) {
+        } else if (speed > maxSpeed) {
             System.out.println("Carreful! Max speed reached! ");
         } else {
             System.out.println("Valid speed enetered.");
@@ -32,6 +32,7 @@ public class Vehicle extends Object  {
 
         System.out.println(make + " is accelerationg with " + speed + " kn/h for " + durationInHours + "h");
 
+        // "distance" = local variable
         double distance = speed * durationInHours;
         totalTravelDistance = totalTravelDistance + distance;
 
