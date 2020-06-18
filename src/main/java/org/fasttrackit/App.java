@@ -71,6 +71,35 @@ public class App
         Car car2backup = car2;
         car2 = carReference;
 
+        System.out.println("Initial name");
+        System.out.println(car2.make);
+        System.out.println(carReference.make);
+
+        car2.make = "Audi";
+
+        System.out.println("Update name");
+
+        System.out.println(car2.make);
+        System.out.println(carReference.make);
+
+
+        // NPE (NullPointerException) examples
+        // car2 = null;
+        // System.out.println(car2.make);
+
+        System.out.println("Modulo (modulus) examples: ");
+        System.out.println(4 % 2);
+        System.out.println(4 % 3);
+
+        System.out.println("Is 4 even ?");
+        System.out.println(4 % 2 == 0);
+
+        System.out.println("Is 5 even ?");
+        System.out.println(5 % 2 == 0);
+
+        System.out.println("Is 5 not even ?");
+        System.out.println(5 % 2 != 0);  // != neaga expresia care urmeaza se traduce cu nu este egal cu 0
+
 
     }
 }
