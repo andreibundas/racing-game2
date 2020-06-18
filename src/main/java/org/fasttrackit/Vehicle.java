@@ -14,6 +14,22 @@ public class Vehicle extends Object  {
 
      // Declararea Metodei
     public double accelerate(double speed, double durationInHours) {
+        if(speed > maxSpeed) {                 // conditional statement
+            System.out.println("Max speed exceeded.");
+            return 0;
+        } else if (speed -- maxSpeed) {
+            System.out.println("Carreful! Max speed reached! ");
+        } else {
+            System.out.println("Valid speed enetered.");
+        }
+
+        if(damaged) {
+            System.out.println("The vehicle is dmaged. You cannot accelerate.");
+            return 0;
+        }
+
+
+
         System.out.println(make + " is accelerationg with " + speed + " kn/h for " + durationInHours + "h");
 
         double distance = speed * durationInHours;
@@ -25,6 +41,8 @@ public class Vehicle extends Object  {
         System.out.println("Total travel distance" + totalTravelDistance);
 
         double usedFuel = distance * mileage / 100;
+
+        // todo: use more fuel if speed > 120 km/h;
         fuelLevel = fuelLevel - usedFuel;
         // fuelLevel = -= usedFuel;
 
