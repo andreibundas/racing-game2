@@ -33,6 +33,11 @@ public class Vehicle extends Object  {
 
         return distance;
     }
+  // return type : "void" nu necesita return
+    public void makeSound() {
+        System.out.println("Make way");
 
+        return;  //- e inutil , nu trebuie indicat in cazul in care folosim return type: " void "
+    }
 
 }

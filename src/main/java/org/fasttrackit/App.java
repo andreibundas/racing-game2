@@ -101,5 +101,12 @@ public class App
         System.out.println(5 % 2 != 0);  // != neaga expresia care urmeaza se traduce cu nu este egal cu 0
 
 
+        System.out.println("Total distance before repair: " + carReference.totalTravelDistance );
+        Mechanic mechanic = new Mechanic();
+        mechanic.repair(carReference);
+
+        System.out.println("Total distance after repair: " + carReference.totalTravelDistance );
+
+
     }
 }
