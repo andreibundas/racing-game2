@@ -32,10 +32,8 @@ public class App
         // stocare copie a acelui motor in proprietatea engine a masinii
         carReference.engine = engine1;
 
-
-
-
-        System.out.println(carReference.engine.manufacturer);
+        // invocarea , folosirea, apelarea mtodei accelerate
+        double currentDistance = carReference.accelerate(100, 0.5);  // distanta parcursa de masina in runda curenta
 
 
 
@@ -50,6 +48,28 @@ public class App
         System.out.println(carReference.totalTravelDistance);
         System.out.println(carReference.damaged);
         System.out.println(carReference.doorCount);
+
+
+
+        Car car2 = new Car();
+        car2.make = "Mercedes";
+        car2.model = "CLS";
+        car2.color = "black";
+
+        double car2distance = car2.accelerate(120, 3);
+
+        car2.make = carReference.make;
+
+
+        // concatenation
+        System.out.println(car2.make + " " + carReference.make);
+
+        System.out.println("Car2 make: " + car2.make);
+        System.out.println("Carreference make : " + carReference.make);
+
+
+        Car car2backup = car2;
+        car2 = carReference;
 
 
     }
