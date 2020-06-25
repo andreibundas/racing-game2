@@ -1,19 +1,8 @@
-package org.fasttrackit;
+package org.fasttrackit.controller;
 
 import java.util.Scanner;
 
-public class Game {
-
-    public void start() {
-        System.out.println("Welcome to the Racing Game!");
-
-        System.out.println("\uD83D\uDE97");
-
-        int playerCount = getPlayerCountFromUser();
-        System.out.println("Player count: " + playerCount);
-
-
-    }
+public class StandardInputController {
 
     private int getPlayerCountFromUser() {
         System.out.println("Please enter number of players");
@@ -24,6 +13,11 @@ public class Game {
 //        return numberEnteredByUser;
 
 
-    }
-
+////        for ( int 1 =0; i < tracks.length; i++ ) {
+//        if (tracks[i] != null) {
+//
+//
+////            // 1. Street Citcuit: 300 km
+////            System.out.println(i+1 + " . " + tracks[i].getName() + ": " + tracks[i].get.Length() + "km"" );
+////        }
 }

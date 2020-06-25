@@ -1,13 +1,61 @@
 package org.fasttrackit;
 
 
-public class App 
-{
-    public static void main( String[] args )
-    {
+import org.fasttrackit.service.Game;
+import org.fasttrackit.vehicle.Car;
+import org.fasttrackit.vehicle.Engine;
 
-        Game game = new Game();
-        game.start();
+import java.util.Scanner;
+
+public class App
+{
+    public static void main( String[] args )    {
+
+         Game game = new Game();
+         game.start();
+
+
+         new Car();
+
+         Engine engine = new Engine();
+         engine.manufacturer = "Renault";
+         new Car(engine);
+
+
+
+
+            Scanner input = new Scanner(System.in);
+            Scanner input2 = new Scanner(System.in);
+            Scanner input3 = new Scanner(System.in);
+            Scanner input4 = new Scanner(System.in);
+
+            System.out.print("Enter a noun: ");
+            String noun = input.next();
+            System.out.print("Enter a verb: ");
+            String verb = input2.next();
+            System.out.print("Enter an adjective: ");
+            String adjective = input3.next();
+            System.out.print("Enter an adverb: ");
+            String adverb = input4.next();
+
+            System.out.println("Are you " + verb + " with your " + adjective + " " + noun + " " + adverb + " ?");
+
+
+
+
+
+        Vehicle vehicle1 = new Vehicle();
+ //       vehicle1.totalVehicleCount = 1;
+
+        vehicle1.setMake("VW");
+        vehicle1.setModel("Golf");
+        vehicle1.setColor("red");
+
+
+        Vehicle vehicle2 = new Vehicle();
+//        vehicle2.totalVehicleCount = 4;
+
+        new Vehicle();
 
 
 //
